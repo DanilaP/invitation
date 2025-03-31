@@ -42,7 +42,7 @@ const Carousel = ({ images }: { images: string[] }) => {
     // Возобновление автоматической смены при уходе курсора
     const handleMouseLeave = () => {
         if (images.length > 1) {
-            timerRef.current = setInterval(nextSlide, 1000);
+            timerRef.current = setInterval(nextSlide, 3000);
         }
     };
 
