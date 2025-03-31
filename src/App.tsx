@@ -108,7 +108,7 @@ function App() {
                     <div className='background-img' />
                 </div>
                 <div className="content">
-                    <div className="content-title">
+                    <div style={{ marginBottom: "30px" }} className="content-title">
                         <h2>Дорогие партнеры!</h2>
                         <div className="content-title-main">
                             Мы рады представить Вам эксклюзивную возможность стать частью закрытого инвестиционного клуба, 
@@ -117,7 +117,7 @@ function App() {
                     </div>
                     <hr style={{ width: "90%" }}></hr>
                     <div className="content-locations">
-                        <div className="content-locations-title">
+                        <div style={{ marginBottom: "30px" }} className="content-locations-title">
                             <h2>ЛОКАЦИИ</h2>
                             <div className="title-content">
                                 <h3>ПРОЖИВАНИЕ В ОТЕЛЕ PineRiver</h3>
@@ -155,7 +155,7 @@ function App() {
                                 в изысканной атмосфере. Проведем неформальное общение, обсудив перспективные 
                                 идеи и инвестиционные возможности в непринужденной обстановке
                             </div>
-                            <h3>БАННЫЙ КОМПЛЕКС «4 СТИХИИ»</h3>
+                            <h3>БАННЫЙ КОМПЛЕКС <br /> «4 СТИХИИ»</h3>
                             <Carousel images={[
                                     "/four-elements/test1.webp",
                                     "/four-elements/test2.webp",
@@ -204,9 +204,9 @@ function App() {
                                 купание в купели с чистейшей родниковой водой, что позволит восстановить силы и 
                                 зарядиться энергией.
                             </div>
-                            <div className='j-rows' style={{ marginTop: "20px" }}>
-                                * при желании искупаться в купели, просьба предусмотреть наличие сменной одежды, 
-                                а также иметь удобную обувь, так как местность гористая
+                            <div className='j-rows small-text' style={{ marginTop: "20px" }}>
+                                <i>* при желании искупаться в купели, просьба предусмотреть наличие сменной одежды, 
+                                а также иметь удобную обувь, так как местность гористая</i>
                             </div>
                         </div>
                     </div>
@@ -238,7 +238,7 @@ function App() {
                             <h2 className='numbers'>18.05</h2>
                             <div className="timings">
                                 <div><span className = "numbers small">09:00</span> Завтрак </div>
-                                <div><span className = "numbers small">11:00 - 12:30</span> Купель</div> 
+                                <div><span className = "numbers small">11:00 - 12:30</span> Пешая прогулка в горы и купание в купели</div> 
                                 <div><span className = "numbers small">13:00 - 15:00</span> Обед в ресторане «Яблоки печем»</div>
                                 <div><span className = "numbers small">после 15:30</span> Свободное время</div>
                             </div>
