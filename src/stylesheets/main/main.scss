@@ -1,14 +1,14 @@
 body {
-    background-color: rgb(255, 255, 245);
+    background-color: rgb(255, 255, 250);
 }
 .error {
     border: 2px solid red !important;
 }
 .numbers {
-    font-family: "calibri";
+    //font-family: "calibri";
 }
 .small {
-    font-size: 20px;
+    //font-size: 20px;
 }
 .background-lines {
     width: 100%;
@@ -73,7 +73,7 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-        font-family: 'century gothic';
+        //font-family: 'century gothic';
     }
 
     .content-title-main {
@@ -92,7 +92,7 @@ body {
         flex-direction: column;
         align-items: center;
         margin: 0 auto;
-        font-family: 'GABRIOLA';
+        //font-family: 'GABRIOLA';
         font-size: 25px;
     }
 
@@ -110,7 +110,7 @@ body {
         align-items: center;
         width: 70%;
         margin: 0 auto;
-        font-family: 'century gothic';
+        //font-family: 'century gothic';
     }
 
     .content-locations-title {
@@ -128,12 +128,12 @@ body {
         box-sizing: border-box;
 
         h1 {
-            font-family: 'bart';
+            //font-family: 'bart';
         }
 
         .title {
             text-align: center;
-            font-family: 'gabriola';
+            //font-family: 'gabriola';
             font-size: 25px;
         }
     }
@@ -147,8 +147,8 @@ form {
     margin-top: 50px;
 
     label {
-        font-family: "GABRIOLA";
-        font-size: 25px;
+        //font-family: "GABRIOLA";
+        //font-size: 25px;
     }
 }
 .form-input {
