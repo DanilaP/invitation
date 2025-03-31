@@ -4,6 +4,7 @@
     max-width: 800px;
     margin: 0 auto;
     overflow: hidden;
+    border-radius: 10px;
   }
   
   .carousel-track {
@@ -64,6 +65,24 @@
     background-color: #717171;
   }
 
+  .next-btn {
+    right: 0px;
+  }
+  .prev-btn {
+    left: 0px;
+  }
+  .carousel-icon {
+    position: absolute;
+    font-size: 75px;
+    color: white;
+    z-index: 100;
+    top: 110px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   @media screen and (max-width: 710px) {
     .carousel-container {
       .carousel-track {
@@ -78,3 +97,4 @@
       }
     }
   }
+  

@@ -1,4 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
+import { GrFormNext } from "react-icons/gr";
+import { GrFormPrevious } from "react-icons/gr";
 import './carousel.scss'; 
 
 const Carousel = ({ images }: { images: string[] }) => {
@@ -7,55 +9,49 @@ const Carousel = ({ images }: { images: string[] }) => {
 
     // Функция для перехода к следующему слайду
     const nextSlide = () => {
-      setCurrentIndex((prevIndex) => 
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    };
-
-    // Функция для перехода к предыдущему слайду
-    //const prevSlide = () => {
-    //  setCurrentIndex((prevIndex) => 
-    //    prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    //  );
-    //};
-
-    // Запуск автоматической смены слайдов
-    useEffect(() => {
-      if (images.length > 1) {
-        timerRef.current = setInterval(nextSlide, 3000);
-      }
-      
-      return () => {
-        if (timerRef.current) {
-          clearInterval(timerRef.current);
-        }
-      };
-    }, [images.length]);
-
-    // Остановка автоматической смены при наведении
-    const handleMouseEnter = () => {
+        setCurrentIndex((prevIndex) => 
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
         if (timerRef.current) {
             clearInterval(timerRef.current);
-        }
-    };
-
-    // Возобновление автоматической смены при уходе курсора
-    const handleMouseLeave = () => {
-        if (images.length > 1) {
             timerRef.current = setInterval(nextSlide, 3000);
         }
     };
 
+    // Функция для перехода к предыдущему слайду
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) => 
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+        if (timerRef.current) {
+            clearInterval(timerRef.current);
+            timerRef.current = setInterval(nextSlide, 3000);
+        }
+    };
+
+    // Запуск автоматической смены слайдов
+    useEffect(() => {
+        if (images.length > 1) {
+            timerRef.current = setInterval(nextSlide, 3000);
+        }
+      
+        return () => {
+            if (timerRef.current) {
+                clearInterval(timerRef.current);
+            }
+        };
+    }, [images.length]);
+
     if (!images || images.length === 0) {
-       return <div>No images to display</div>;
+        return <div>No images to display</div>;
     }
 
     return (
         <div 
             className="carousel-container"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
         >
+            <GrFormPrevious onClick={() => prevSlide()} className='carousel-icon prev-btn' />
+            <GrFormNext onClick={() => nextSlide()} className='carousel-icon next-btn' />
             <div className="carousel-track" style={{ 
                 transform: `translateX(-${currentIndex * 100}%)`,
                 transition: 'transform 0.5s ease-in-out'
@@ -78,7 +74,6 @@ const Carousel = ({ images }: { images: string[] }) => {
                             <span
                                 key={index}
                                 className={`dot ${index === currentIndex ? 'active' : ''}`}
-                                onClick={() => setCurrentIndex(index)}
                             />
                         ))}
                     </div>
