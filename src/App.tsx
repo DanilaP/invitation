@@ -44,6 +44,7 @@ function App() {
                 status: formData.userStatus 
             })
             .then((res: any) => {
+                console.log(res);
                 if (fioInput.current && numberInput.current && statusInputTrue.current && statusInputFalse.current) {
                     fioInput.current.value = "";
                     numberInput.current.value = "";
