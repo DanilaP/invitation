@@ -258,7 +258,7 @@ function App() {
                             <input 
                                 ref={ numberInput }
                                 onChange={(e) => setFormData({...formData, userNumber: e.target.value})} 
-                                maxLength={11} 
+                                maxLength={15} 
                                 className='form-input' 
                                 placeholder='Ваш номер телефона' 
                             />
