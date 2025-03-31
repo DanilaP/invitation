@@ -302,6 +302,10 @@ function App() {
                                         Я не смогу прийти
                                 </label>
                             </div>
+                            <div style={{ fontSize: "8px", textAlign: "center" }} >
+                                Указывая личные данные пользователь автоматически <br />
+                                соглашается на их хранение и обработку
+                            </div>
                             <button 
                                 disabled={ 
                                     !isSubmit 
