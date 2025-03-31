@@ -109,7 +109,7 @@ function App() {
                 </div>
                 <div className="content">
                     <div className="content-title">
-                        <h1>Дорогие партнеры!</h1>
+                        <h2>Дорогие партнеры!</h2>
                         <div className="content-title-main">
                             Мы рады представить Вам эксклюзивную возможность стать частью закрытого инвестиционного клуба, 
                             ориентированного на перспективные цифровые активы и инновационные торговые алгоритмы.
@@ -119,7 +119,7 @@ function App() {
                         <h2>Программа</h2>
                         <div className="item-test">
                             <h2 className='numbers'>16.05</h2>
-                            <div className="timings">
+                            <div className="timings j-rows">
                                 <div>
                                     <span className = "numbers small">15:00</span> Размещение в отеле PineRiver (городской округ Сочи, посёлок городского типа 
                                     Красная Поляна, улица Пчеловодов, 59)
@@ -129,7 +129,7 @@ function App() {
                         </div>
                         <div className="item-test">
                             <h2 className='numbers'>17.05</h2>
-                            <div className="timings">
+                            <div className="timings j-rows">
                                 <div><span className = "numbers small">08:00 - 09:00</span> Завтрак в отеле PineRiver</div>
                                 <div><span className = "numbers small">09:30 - 12:00</span> Конференция 7RL/OKX</div> 
                                 <div><span className = "numbers small">13:00 - 15:00</span> Обед в ресторане Old Boys</div>
@@ -140,7 +140,7 @@ function App() {
                         </div>
                         <div className="item-test">
                             <h2 className='numbers'>18.05</h2>
-                            <div className="timings">
+                            <div className="timings j-rows">
                                 <div><span className = "numbers small">09:00</span> Завтрак </div>
                                 <div><span className = "numbers small">11:00 - 12:30</span> Купель</div> 
                                 <div><span className = "numbers small">13:00 - 15:00</span> Обед в ресторане «Яблоки печем»</div>
@@ -154,12 +154,6 @@ function App() {
                             <h2>ЛОКАЦИИ</h2>
                             <div className="title-content">
                                 <h3>ПРОЖИВАНИЕ В ОТЕЛЕ PineRiver</h3>
-                                <div style={{ marginBottom: "20px" }}>
-                                    Отель расположен в самом сердце гор, среди живописных пейзажей, от которых 
-                                    буквально захватывает дух. Это место про единение с природой, красоту, гармонию 
-                                    и уединение. Место, которое позволит вам расслабиться, восстановить внутренние 
-                                    ресурсы, насладиться пляжным отдыхом и авторской кухней в любое время года.
-                                </div>
                                 <Carousel images={[
                                     "/hotel/first.png",
                                     "/hotel/second.png",
@@ -171,32 +165,30 @@ function App() {
                                     "/hotel/test4.webp",
                                     ]}
                                 />
+                                <div className='j-rows' style={{ marginTop: "20px" }}>
+                                    Отель расположен в самом сердце гор, среди живописных пейзажей, от которых 
+                                    буквально захватывает дух. Это место про единение с природой, красоту, гармонию 
+                                    и уединение. Место, которое позволит вам расслабиться, восстановить внутренние 
+                                    ресурсы, насладиться пляжным отдыхом и авторской кухней в любое время года.
+                                </div>
                             </div>
                             <h3>ПОСЕЩЕНИЕ ЛУЧШИХ РЕСТОРАНОВ С ИЗЫСКАННОЙ КУХНЕЙ</h3>
-                            <div style={{ marginBottom: "20px" }}>
+                            <Carousel images={[
+                                "/restaurants/test1.jpeg",
+                                "/restaurants/test2.webp",
+                                "/restaurants/test3.webp",
+                                "/restaurants/test4.webp",
+                                "/restaurants/test5.jpg",
+                                "/restaurants/test6.webp",
+                                "/restaurants/test7.webp",
+                                ]}
+                            />
+                            <div className='j-rows' style={{ marginTop: "20px" }}>
                                 Это возможность насладиться гастрономическими шедеврами от ведущих шеф-поваров 
                                 в изысканной атмосфере. Проведем неформальное общение, обсудив перспективные 
                                 идеи и инвестиционные возможности в непринужденной обстановке
                             </div>
-                            <div className="carousel">
-                                <Carousel images={[
-                                    "/restaurants/test1.jpeg",
-                                    "/restaurants/test2.webp",
-                                    "/restaurants/test3.webp",
-                                    "/restaurants/test4.webp",
-                                    "/restaurants/test5.jpg",
-                                    "/restaurants/test6.webp",
-                                    "/restaurants/test7.webp",
-                                    ]}
-                                />
-                            </div>
                             <h3>БАННЫЙ КОМПЛЕКС «4 СТИХИИ»</h3>
-                            <div style={{ marginBottom: "20px" }}>
-                                Это место, где каждый найдет что-то для себя. Здесь есть несколько парных, 
-                                включая общественную парную, парную для индивидуального парения и хаммам, 
-                                а также бассейн под открытым небом и джакузи. Мастера парения проведут 
-                                специальную программу, которая поможет расслабиться и отвлечься от рабочих будней
-                            </div>
                             <Carousel images={[
                                     "/four-elements/test1.webp",
                                     "/four-elements/test2.webp",
@@ -208,13 +200,13 @@ function App() {
                                     "/four-elements/test8.webp",
                                 ]}
                             />
-                            <h3>КАЗИНО СОЧИ</h3>
-                            <div style={{ marginBottom: "20px" }}>
-                                это эксклюзивная возможность окунуться в атмосферу азарта и элегантности в 
-                                одном из лучших игорных заведений России. Сможем испытать удачу в престижных 
-                                игровых залах, насладиться премиальным сервисом, а также провести время в 
-                                приватной и роскошной обстановке
+                            <div className='j-rows' style={{ marginTop: "20px" }}>
+                                Это место, где каждый найдет что-то для себя. Здесь есть несколько парных, 
+                                включая общественную парную, парную для индивидуального парения и хаммам, 
+                                а также бассейн под открытым небом и джакузи. Мастера парения проведут 
+                                специальную программу, которая поможет расслабиться и отвлечься от рабочих будней
                             </div>
+                            <h3>КАЗИНО СОЧИ</h3>
                             <Carousel images={[
                                 "/casino/main1.jpg",
                                 "/casino/main2.webp",
@@ -225,13 +217,13 @@ function App() {
                                 "/casino/main7.webp",
                                 ]}
                             />
-                            <h3>ПРОГУЛКА В ГОРАХ И КУПАНИЕ В КУПЕЛИ</h3>
-                            <div style={{ marginBottom: "20px" }}>
-                                Вдохновляющие виды горных вершин, свежий воздух и неспешная прогулка создадут 
-                                идеальные условия переключения после активного дня. Завершающим акцентом станет 
-                                купание в купели с чистейшей родниковой водой, что позволит восстановить силы и 
-                                зарядиться энергией.
+                            <div className='j-rows' style={{ marginTop: "20px" }}>
+                                это эксклюзивная возможность окунуться в атмосферу азарта и элегантности в 
+                                одном из лучших игорных заведений России. Сможем испытать удачу в престижных 
+                                игровых залах, насладиться премиальным сервисом, а также провести время в 
+                                приватной и роскошной обстановке
                             </div>
+                            <h3>ПРОГУЛКА В ГОРАХ И КУПАНИЕ В КУПЕЛИ</h3>
                             <Carousel images={[
                                     "/font/test1.webp",
                                     "/font/test2.webp",
@@ -239,15 +231,21 @@ function App() {
                                     "/font/test4.webp",
                                 ]}
                             />
-                            <div style={{ marginTop: "20px" }}>
+                            <div className='j-rows' style={{ marginTop: "20px" }}>
+                                Вдохновляющие виды горных вершин, свежий воздух и неспешная прогулка создадут 
+                                идеальные условия переключения после активного дня. Завершающим акцентом станет 
+                                купание в купели с чистейшей родниковой водой, что позволит восстановить силы и 
+                                зарядиться энергией.
+                            </div>
+                            <div className='j-rows' style={{ marginTop: "20px" }}>
                                 * при желании искупаться в купели, просьба предусмотреть наличие сменной одежды, 
                                 а также иметь удобную обувь, так как местность гористая
                             </div>
                         </div>
                     </div>
                     <div className="RSVP">
-                        <div className="title">ПРОСЬБА ПОДТВЕРДИТЬ СВОЕ ПРИСУТСТВИЕ ДО</div>
-                        <div className="date numbers small">28.03.2025</div>
+                        <div className="title">ПРОСЬБА ПОДТВЕРДИТЬ СВОЕ ПРИСУТСТВИЕ</div>
+                        <div className="date numbers small">до 28.03.2025</div>
                         <form onSubmit={(e) => submit(e)}>
                             <input 
                                 ref={ fioInput }
@@ -315,7 +313,7 @@ function App() {
                         <div className="background-lines"></div>
                         <div className="main-footer">
                             <div className="main-footer-content">
-                                <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
+                                <h3>ОСТАЛИСЬ ВОПРОСЫ?</h3>
                                 <div>Яна Сваровская – помощник руководителя  7 RED LINES</div>
                                 <div>+7(966) 171-13-31</div>
                                 <div className='main-footer-icons'>
