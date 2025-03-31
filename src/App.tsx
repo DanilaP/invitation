@@ -8,6 +8,8 @@ import './stylesheets/themes/white.scss';
 import './stylesheets/main/main.scss';
 import './stylesheets/antd/main.scss';
 import './App.css';
+import axios from 'axios';
+import { Modal } from 'antd';
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
         userStatus: null
     });
     const [isMobile, setIsMobile] = useState(true);
+    const [modal, contextHolder] = Modal.useModal();
     const fioInput = useRef<HTMLInputElement>(null);
     const numberInput = useRef<HTMLInputElement>(null);
     const statusInputTrue = useRef<HTMLInputElement>(null);
@@ -33,6 +36,34 @@ function App() {
             if (formData.userNumber === "") {
                 numberInput.current.classList.add("error");
             }
+        }
+        if (formData.userFio && formData.userNumber && formData.userStatus) {
+            axios.post("http://localhost:5002/auth", { 
+                fio: formData.userFio, 
+                number: formData.userNumber, 
+                status: formData.userStatus 
+            })
+            .then((res: any) => {
+                if (fioInput.current && numberInput.current && statusInputTrue.current && statusInputFalse.current) {
+                    fioInput.current.value = "";
+                    numberInput.current.value = "";
+                    statusInputTrue.current.checked = false;
+                    statusInputFalse.current.checked = false;
+                    modal.info({ title: "Статус ответа", content: (
+                        <>
+                            <div>Ваш ответ сохранён</div>
+                        </>
+                    ) })
+                }
+            })
+            .catch((error) => {
+                console.error(error);
+                modal.error({ title: "Статус ответа", content: (
+                    <>
+                        <div>Произошла ошибка при сохранении ответа</div>
+                    </>
+                ) })
+            })
         }
     }
 
@@ -71,6 +102,7 @@ function App() {
     if (isMobile) {
         return (
             <div className="wrapper">
+                {contextHolder}
                 <div className="header">
                     <div className='background-img' />
                 </div>
