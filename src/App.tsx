@@ -53,13 +53,18 @@ function App() {
         }
     }, [formData]);
 
+    const displayContent = () => {
+        if (window.innerWidth >= 1100) {
+            setIsMobile(false);
+        } else {
+            setIsMobile(true);
+        }
+    }
+
     useEffect(() => {
+        displayContent();
         window.addEventListener('resize', () => {
-            if (window.innerWidth >= 1100) {
-                setIsMobile(false);
-            } else {
-                setIsMobile(true);
-            }
+            displayContent();
         })
     }, []);
 
@@ -272,7 +277,9 @@ function App() {
     }
     else {
         return (
-            <h1>Возможен вход только с мобильного устройства!</h1>
+            <div className="wrapper">
+                <h1>Возможен вход только с мобильного устройства!</h1>
+            </div>
         )
     }
     
