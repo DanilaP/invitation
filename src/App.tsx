@@ -243,7 +243,7 @@ function App() {
                                 <div><span className = "small">после 15:30</span> Свободное время</div>
                             </div>
                         </div>
-                        <div className="content-timings-footer">Выселение доступно до <span className = "small">19.05 12:00</span></div>
+                        <div className="content-timings-footer">Выселение доступно до 19.05 12:00</div>
                     </div>
                     <div className="RSVP">
                         <div className="title">ПРОСЬБА ПОДТВЕРДИТЬ СВОЕ ПРИСУТСТВИЕ</div>
