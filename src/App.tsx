@@ -286,8 +286,16 @@ function App() {
                                 <div>Яна Сваровская – помощник руководителя  7 RED LINES</div>
                                 <div>+7(966) 171-13-31</div>
                                 <div className='main-footer-icons'>
-                                    <FaTelegram color='#27a7e7' fontSize={"25px"} />
-                                    <FaWhatsappSquare color='#43d854' fontSize={"25px"} />
+                                    <FaTelegram 
+                                        onClick={() => window.location.href="http://t.me/79661711331"} 
+                                        color='#27a7e7' 
+                                        fontSize={"25px"} 
+                                    />
+                                    <FaWhatsappSquare 
+                                        onClick={() => window.location.href="http://wa.me/79661711331"}
+                                        color='#43d854' 
+                                        fontSize={"25px"} 
+                                    />
                                 </div>
                             </div>
                         </div>
