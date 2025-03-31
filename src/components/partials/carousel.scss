@@ -88,12 +88,19 @@
       .carousel-track {
         height: 200px;
       }
+      .carousel-icon {
+        font-size: 50px;
+        top: 72.5px;
+      }
     }
   }
   @media screen and (max-width: 360px) {
     .carousel-container {
       .carousel-track {
         height: 150px;
+      }
+      .carousel-icon {
+        top: 50px;
       }
     }
   }
