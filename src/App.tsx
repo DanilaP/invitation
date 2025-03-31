@@ -279,6 +279,7 @@ function App() {
                                     Отправить
                             </button>
                         </form>
+                        <div className="background-lines"></div>
                         <div className="main-footer">
                             <div className="main-footer-content">
                                 <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
