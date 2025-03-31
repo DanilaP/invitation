@@ -214,40 +214,40 @@ function App() {
                     <div className="content-timings">
                         <h2>Программа</h2>
                         <div className="item-test">
-                            <h2 className='numbers'>16.05</h2>
+                            <h2 style={{ fontSize: "30px" }} className='numbers'>16.05</h2>
                             <div className="timing">
                                 <div>
-                                    <span className = "numbers small">15:00</span> Размещение в отеле «PineRiver» (городской округ Сочи, посёлок городского типа 
+                                    <span className = "small">15:00</span> Размещение в отеле «PineRiver» (городской округ Сочи, посёлок городского типа 
                                     Красная Поляна, улица Пчеловодов, 59)
                                 </div>
-                                <div><span className = "numbers small">19:00</span> Ужин в ресторане отеля</div> 
+                                <div><span className = "small">19:00</span> Ужин в ресторане отеля</div> 
                             </div>
                         </div>
                         <div className="item-test">
-                            <h2 className='numbers'>17.05</h2>
+                            <h2 style={{ fontSize: "30px" }} className='numbers'>17.05</h2>
                             <div className="timings">
-                                <div><span className = "numbers small">08:00 - 09:00</span> Завтрак в отеле «PineRiver»</div>
-                                <div><span className = "numbers small">09:30 - 12:00</span> Конференция 7RL/OKX</div> 
-                                <div><span className = "numbers small">13:00 - 15:00</span> Обед в ресторане «Old Boys»</div>
-                                <div><span className = "numbers small">16:00 - 19:00</span> Банный комплекс «4 стихии»</div> 
-                                <div><span className = "numbers small">21:00 - 22:00</span> Ужин в ресторане «Brunello»</div>
-                                <div><span className = "numbers small">22:00 - 02:00</span> Игра в казино</div> 
+                                <div><span className = "small">08:00 - 09:00</span> Завтрак в отеле «PineRiver»</div>
+                                <div><span className = "small">09:30 - 12:00</span> Конференция 7RL/OKX</div> 
+                                <div><span className = "small">13:00 - 15:00</span> Обед в ресторане «Old Boys»</div>
+                                <div><span className = "small">16:00 - 19:00</span> Банный комплекс «4 стихии»</div> 
+                                <div><span className = "small">21:00 - 22:00</span> Ужин в ресторане «Brunello»</div>
+                                <div><span className = "small">22:00 - 02:00</span> Игра в казино</div> 
                             </div>
                         </div>
                         <div className="item-test">
-                            <h2 className='numbers'>18.05</h2>
+                            <h2 style={{ fontSize: "30px" }} className='numbers'>18.05</h2>
                             <div className="timings">
-                                <div><span className = "numbers small">09:00</span> Завтрак </div>
-                                <div><span className = "numbers small">11:00 - 12:30</span> Пешая прогулка в горы и купание в купели</div> 
-                                <div><span className = "numbers small">13:00 - 15:00</span> Обед в ресторане «Яблоки печем»</div>
-                                <div><span className = "numbers small">после 15:30</span> Свободное время</div>
+                                <div><span className = "small">09:00</span> Завтрак </div>
+                                <div><span className = "small">11:00 - 12:30</span> Пешая прогулка в горы и купание в купели</div> 
+                                <div><span className = "small">13:00 - 15:00</span> Обед в ресторане «Яблоки печем»</div>
+                                <div><span className = "small">после 15:30</span> Свободное время</div>
                             </div>
                         </div>
-                        <div className="content-timings-footer">Выселение доступно до <span className = "numbers small">19.05 12:00</span></div>
+                        <div className="content-timings-footer">Выселение доступно до <span className = "small">19.05 12:00</span></div>
                     </div>
                     <div className="RSVP">
                         <div className="title">ПРОСЬБА ПОДТВЕРДИТЬ СВОЕ ПРИСУТСТВИЕ</div>
-                        <div className="date numbers small">до 28.03.2025</div>
+                        <div className="date small">до 28.03.2025</div>
                         <form onSubmit={(e) => submit(e)}>
                             <input 
                                 ref={ fioInput }
