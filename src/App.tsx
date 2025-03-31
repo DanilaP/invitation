@@ -324,7 +324,7 @@ function App() {
                                 <div style={{ fontSize: "11px" }}>+7(966) 171-13-31</div>
                                 <div className='main-footer-icons'>
                                     <FaTelegram 
-                                        onClick={() => window.location.href="http://t.me/79661711331"} 
+                                        onClick={() => window.location.href="https://t.me/yanasvarovskaya"} 
                                         color='#27a7e7' 
                                         fontSize={"25px"} 
                                     />
