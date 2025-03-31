@@ -128,8 +128,14 @@ function App() {
                                     ресурсы, насладиться пляжным отдыхом и авторской кухней в любое время года.
                                 </div>
                                 <Carousel images={[
-                                    "https://optim.tildacdn.com/tild6266-6166-4765-a661-396135323037/-/format/webp/0001-7-2.jpg",
-                                    "https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_652e2c78ba9cbf61341dcf55_652e2ded7e9d3d6391cc2219/scale_1200",
+                                    "/hotel/first.png",
+                                    "/hotel/second.png",
+                                    "/hotel/third.png",
+                                    "/hotel/fourth.png",
+                                    "/hotel/test1.webp",
+                                    "/hotel/test2.webp",
+                                    "/hotel/test3.webp",
+                                    "/hotel/test4.webp",
                                     ]}
                                 />
                             </div>
@@ -141,9 +147,13 @@ function App() {
                             </div>
                             <div className="carousel">
                                 <Carousel images={[
-                                    "https://yabloki-pechem.com/wp-content/themes/yablokipechem-new/images/665ee13b840ea294cd7a8694_new_02.webp",
-                                    "https://static.tildacdn.com/tild3034-6431-4838-a633-353161386663/1W9A7238.jpg",
-                                    "https://static.tildacdn.com/tild6366-3365-4339-a563-653330313665/1W9A7277.jpg"
+                                    "/restaurants/test1.jpeg",
+                                    "/restaurants/test2.webp",
+                                    "/restaurants/test3.webp",
+                                    "/restaurants/test4.webp",
+                                    "/restaurants/test5.jpg",
+                                    "/restaurants/test6.webp",
+                                    "/restaurants/test7.webp",
                                     ]}
                                 />
                             </div>
@@ -155,9 +165,14 @@ function App() {
                                 специальную программу, которая поможет расслабиться и отвлечься от рабочих будней
                             </div>
                             <Carousel images={[
-                                "https://avatars.mds.yandex.net/get-altay/9793917/2a0000018b5316c4685a841c38cfbc22910e/XXXL",
-                                "https://avatars.mds.yandex.net/get-altay/9686455/2a00000187cdf604f64f43589b5105aa6360/XXXL",
-                                "https://avatars.mds.yandex.net/get-altay/235931/2a000001866542d28103e578848667eb74f9/XXXL"
+                                    "/four-elements/test1.webp",
+                                    "/four-elements/test2.webp",
+                                    "/four-elements/test3.webp",
+                                    "/four-elements/test4.webp",
+                                    "/four-elements/test5.webp",
+                                    "/four-elements/test6.webp",
+                                    "/four-elements/test7.webp",
+                                    "/four-elements/test8.webp",
                                 ]}
                             />
                             <h3>КАЗИНО СОЧИ</h3>
@@ -168,9 +183,13 @@ function App() {
                                 приватной и роскошной обстановке
                             </div>
                             <Carousel images={[
-                                "https://casinosochi.ru/_next/image?url=https%3A%2F%2Fbackend.krasnayapolyana.game%2Fassets%2Fcbec6963-3dd2-476d-ade1-0bade1c92bf0%3F&w=1080&q=75",
-                                "https://casinosochi.ru/_next/image?url=https%3A%2F%2Fbackend.krasnayapolyana.game%2Fassets%2F3843ad8b-fd96-486c-88ff-8d41c0497143%3F&w=1080&q=75",
-                                "https://casinosochi.ru/_next/image?url=https%3A%2F%2Fbackend.krasnayapolyana.game%2Fassets%2Fcbec6963-3dd2-476d-ade1-0bade1c92bf0%3F&w=1080&q=75"
+                                "/casino/main1.jpg",
+                                "/casino/main2.webp",
+                                "/casino/main3.jpg",
+                                "/casino/main4.webp",
+                                "/casino/main5.webp",
+                                "/casino/main6.webp",
+                                "/casino/main7.webp",
                                 ]}
                             />
                             <h3>ПРОГУЛКА В ГОРАХ И КУПАНИЕ В КУПЕЛИ</h3>
@@ -181,9 +200,10 @@ function App() {
                                 зарядиться энергией.
                             </div>
                             <Carousel images={[
-                                "https://avatars.mds.yandex.net/get-altay/9720767/2a00000189de8bc163b2d8121187058bd871/XXXL",
-                                "https://avatars.mds.yandex.net/get-altay/10285614/2a0000018fe7ec315c119ea3e3d4b20f64d2/XXXL",
-                                "https://avatars.mds.yandex.net/get-altay/10768168/2a00000190c1fab6f03d637af4c2414f832d/XXXL"
+                                    "/font/test1.webp",
+                                    "/font/test2.webp",
+                                    "/font/test3.webp",
+                                    "/font/test4.webp",
                                 ]}
                             />
                             <div style={{ marginTop: "20px" }}>
@@ -259,16 +279,16 @@ function App() {
                                     Отправить
                             </button>
                         </form>
-                    </div>
-                </div>
-                <div className="main-footer">
-                    <div className="main-footer-content">
-                        <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
-                        <div>Яна Сваровская – помощник руководителя  7 RED LINES</div>
-                        <div>+7(966) 171-13-31</div>
-                        <div className='main-footer-icons'>
-                            <FaTelegram color='#27a7e7' fontSize={"25px"} />
-                            <FaWhatsappSquare color='#43d854' fontSize={"25px"} />
+                        <div className="main-footer">
+                            <div className="main-footer-content">
+                                <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
+                                <div>Яна Сваровская – помощник руководителя  7 RED LINES</div>
+                                <div>+7(966) 171-13-31</div>
+                                <div className='main-footer-icons'>
+                                    <FaTelegram color='#27a7e7' fontSize={"25px"} />
+                                    <FaWhatsappSquare color='#43d854' fontSize={"25px"} />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
