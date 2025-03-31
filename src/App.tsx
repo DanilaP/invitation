@@ -38,7 +38,7 @@ function App() {
             }
         }
         if (formData.userFio && formData.userNumber && formData.userStatus) {
-            axios.post("http://localhost:5002/auth", { 
+            axios.post("http://localhost:5000/auth", { 
                 fio: formData.userFio, 
                 number: formData.userNumber, 
                 status: formData.userStatus 
