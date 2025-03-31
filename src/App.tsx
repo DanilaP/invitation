@@ -173,7 +173,7 @@ function App() {
                                 а также бассейн под открытым небом и джакузи. Мастера парения проведут 
                                 специальную программу, которая поможет расслабиться и отвлечься от рабочих будней
                             </div>
-                            <h3>КАЗИНО СОЧИ</h3>
+                            <h3>«КАЗИНО СОЧИ»</h3>
                             <Carousel images={[
                                 "/casino/main1.jpg",
                                 "/casino/main2.webp",
@@ -214,7 +214,7 @@ function App() {
                     <div className="content-timings">
                         <h2>Программа</h2>
                         <div className="item-test">
-                            <h2 style={{ fontSize: "30px" }} className='numbers'>16.05 (пятница)</h2>
+                            <h2 style={{ fontSize: "23px" }} className='numbers'>16.05 (пятница)</h2>
                             <div className="timing">
                                 <div>
                                     <span className = "small">15:00</span> Размещение в отеле «PineRiver» (городской округ Сочи, посёлок городского типа 
@@ -224,7 +224,7 @@ function App() {
                             </div>
                         </div>
                         <div className="item-test">
-                            <h2 style={{ fontSize: "30px" }} className='numbers'>17.05 (суббота)</h2>
+                            <h2 style={{ fontSize: "23px" }} className='numbers'>17.05 (суббота)</h2>
                             <div className="timings">
                                 <div><span className = "small">08:00 - 09:00</span> Завтрак в отеле «PineRiver»</div>
                                 <div><span className = "small">09:30 - 12:00</span> Конференция 7RL/OKX</div> 
@@ -235,7 +235,7 @@ function App() {
                             </div>
                         </div>
                         <div className="item-test">
-                            <h2 style={{ fontSize: "30px" }} className='numbers'>18.05 (воскресенье)</h2>
+                            <h2 style={{ fontSize: "23px" }} className='numbers'>18.05 (воскресенье)</h2>
                             <div className="timings">
                                 <div><span className = "small">09:00</span> Завтрак </div>
                                 <div><span className = "small">11:00 - 12:30</span> Пешая прогулка в горы и купание в купели</div> 
@@ -316,7 +316,7 @@ function App() {
                         <div className="main-footer">
                             <div className="main-footer-content">
                                 <h3>ОСТАЛИСЬ ВОПРОСЫ?</h3>
-                                <div style={{ fontSize: "11px" }}>Яна Сваровская – помощник руководителя  7 RED LINES</div>
+                                <div style={{ fontSize: "11px" }}>Яна Сваровская – помощник руководителя <br />7 RED LINES</div>
                                 <div style={{ fontSize: "11px" }}>+7(966) 171-13-31</div>
                                 <div className='main-footer-icons'>
                                     <FaTelegram 
