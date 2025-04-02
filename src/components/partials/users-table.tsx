@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Table } from 'antd';
 import { useParams } from 'react-router';
-import axios from 'axios';
+import $api from '../../configs/axios.ts';
 import './users-table.scss'; 
 
 
@@ -11,7 +11,7 @@ const UsersTable = () => {
     const params = useParams();
 
     useEffect(() => {
-        axios.post("http://localhost:5003/users", { password: params.pass })
+        $api.post("/users", { password: params.pass })
         .then((res) => {
             setUsers(res.data.users);
         })

@@ -4,8 +4,7 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { Modal } from 'antd';
 import Carousel from './carousel';
 import '@ant-design/v5-patch-for-react-19';
-import axios from 'axios';
-
+import $api from '../../configs/axios.ts';
 
 function Main() {
 
@@ -34,7 +33,7 @@ function Main() {
             }
         }
         if (formData.userFio && formData.userNumber && formData.userStatus) {
-            axios.post("http://localhost:5003/auth", { 
+            $api.post("/auth", { 
                 fio: formData.userFio, 
                 number: formData.userNumber, 
                 status: formData.userStatus 
