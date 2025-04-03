@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Table } from 'antd';
 import { useParams } from 'react-router';
-import $api from '../../configs/axios.ts';
+import $api from '../../../configs/axios.ts';
 import './users-table.scss'; 
 
 

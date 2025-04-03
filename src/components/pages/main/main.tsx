@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'react';
 import { FaTelegram } from "react-icons/fa";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { Modal } from 'antd';
-import Carousel from './carousel';
+import Carousel from '../../partials/carousel/carousel.tsx';
+import $api from '../../../configs/axios.ts';
 import '@ant-design/v5-patch-for-react-19';
-import $api from '../../configs/axios.ts';
 
 function Main() {
 
