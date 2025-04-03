@@ -242,7 +242,7 @@ function Main() {
                     </div>
                     <div className="RSVP">
                         <div className="title">ПРОСЬБА ПОДТВЕРДИТЬ СВОЕ ПРИСУТСТВИЕ</div>
-                        <div className="date small">до 28.03.2025</div>
+                        <div className="date small">до 28.04.2025</div>
                         <form onSubmit={(e) => submit(e)}>
                             <input 
                                 ref={ fioInput }
@@ -268,6 +268,7 @@ function Main() {
                                 />
                                 <label 
                                     style={{ 
+                                        marginLeft: "8px",
                                         color: !isSubmit 
                                             ? "white" 
                                             : formData.userStatus !== null ? "white" : "red"
@@ -289,6 +290,7 @@ function Main() {
                                 />
                                 <label 
                                     style={{ 
+                                        marginLeft: "8px",
                                         color: !isSubmit 
                                             ? "white" 
                                             : formData.userStatus !== null ? "white" : "red"

@@ -46,7 +46,7 @@ const UsersTable = () => {
                 <div 
                     style={{ color: status ? "green" : "red" }}
                 >
-                        { status ? "Учавствует" : "Не учавствует" }
+                        { status ? "Участвует" : "Не участвует" }
                 </div>,
         }
     ];
