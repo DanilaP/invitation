@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const $api = axios.create({
-    baseURL: "http://localhost:5003"
+    baseURL: "https://summit.7rlines.com/api/"
 });
 
 export default $api;
