@@ -32,7 +32,8 @@ function Main() {
                 numberInput.current.classList.add("error");
             }
         }
-        if (formData.userFio && formData.userNumber && formData.userStatus) {
+
+        if (formData.userFio && formData.userNumber && formData.userStatus !== null) {
             $api.post("/auth", { 
                 fio: formData.userFio, 
                 number: formData.userNumber, 
@@ -263,7 +264,7 @@ function Main() {
                                     onChange={() => setFormData({...formData, userStatus: true})} 
                                     type="radio" 
                                     id="first" 
-                                    name="drone"
+                                    name="first"
                                     value="first"
                                 />
                                 <label 
@@ -284,9 +285,8 @@ function Main() {
                                     onChange={() => setFormData({...formData, userStatus: false})} 
                                     type="radio" 
                                     id="second" 
-                                    name="drone" 
+                                    name="second" 
                                     value="second" 
-                                    className='error'
                                 />
                                 <label 
                                     style={{ 
