@@ -264,7 +264,7 @@ function Main() {
                                     onChange={() => setFormData({...formData, userStatus: true})} 
                                     type="radio" 
                                     id="first" 
-                                    name="first"
+                                    name="drone"
                                     value="first"
                                 />
                                 <label 
@@ -285,7 +285,7 @@ function Main() {
                                     onChange={() => setFormData({...formData, userStatus: false})} 
                                     type="radio" 
                                     id="second" 
-                                    name="second" 
+                                    name="drone" 
                                     value="second" 
                                 />
                                 <label 
